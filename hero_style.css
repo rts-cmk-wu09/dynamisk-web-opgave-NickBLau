@@ -1,0 +1,43 @@
+.hero{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+article{
+    /* fix later!! v */
+    margin-left: 4%;
+    margin-top: -14%;
+    /* fix later!! ^ */
+    padding: 50px;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+
+}
+
+h1{
+    font-size: xx-large;
+}
+
+
+article div{
+    background-color: #F78065;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+
+}
+
+article div img{
+    width: 20px;
+    height: 20px;
+}
+
+div::after{
+    margin-left: 3px;
+    content: "Explore";
+    color: white;
+}
