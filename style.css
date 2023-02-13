@@ -1,0 +1,12 @@
+@import "hero_style.css";
+@import "services_style.css";
+body{
+    background-color: gray;
+}
+
+.orange{
+    color: orange;
+}
+
+img{
+    max-width: 100%;}
