@@ -1,0 +1,51 @@
+
+.facilitiescard_wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.facilities article{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 350px;
+    height: 250px;
+     outline: 1px solid red;
+}
+
+.facilities img{
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.facilities h2{
+    font-size: xx-large;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.facilities p{
+    font-size: x-large;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-start;
+
+}
+
+.facilities p:last-of-type{
+    color: var(--orange);
+    justify-content: end;
+    align-items: flex-end;
+    align-self: flex-start;
+    
+
+}
+
+
+.facilities p:last-of-type:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
