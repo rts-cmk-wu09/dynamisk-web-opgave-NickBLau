@@ -14,6 +14,7 @@ let heading = document.querySelector(".hero");
 let heroImage = document.createElement("img");
 let heroIcon = document.createElement("img");
 let heroDiv = document.createElement("div");
+heroDiv.setAttribute("class", "hero_div")
 let heroText = document.createElement("p");
 let heroHeader = document.createElement("h1");
 let heroArticle = document.createElement("article");

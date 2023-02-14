@@ -4,7 +4,7 @@
 
 }
 
-article{
+.hero article{
     /* fix later!! v */
     margin-left: 4%;
     margin-top: -14%;
@@ -16,12 +16,12 @@ article{
 
 }
 
-h1{
+.hero h1{
     font-size: xx-large;
 }
 
 
-article div{
+.hero article div{
     background-color: #F78065;
     display: flex;
     justify-content: center;
@@ -31,12 +31,12 @@ article div{
 
 }
 
-article div img{
+.hero article div img{
     width: 20px;
     height: 20px;
 }
 
-div::after{
+.hero_div::after{
     margin-left: 3px;
     content: "Explore";
     color: white;
