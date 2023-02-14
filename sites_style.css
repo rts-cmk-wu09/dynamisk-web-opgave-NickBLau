@@ -1,0 +1,61 @@
+.sites{
+    margin-top: 20px;
+    display: flex;
+    gap: 18px;
+}
+
+.sites h2{
+    font-size: 3rem;
+}
+
+.sites p{
+    font-size: 1.6rem;
+}
+
+
+.sitesIconDiv{
+    width: 200px;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sitesIconDiv p{
+    color: white;
+}
+
+.sitesIconDiv p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sitesHeader{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sitescard_wrapper{
+    display: flex;
+}
+
+.sitescard_wrapper h2{
+    font-size: 2.5rem;
+}
+
+.sitescard_wrapper p:last-of-type{
+    color: var(--orange);
+}
+
+.sites img{
+    max-width: 500px;
+    max-height: 500px;
+    margin: 10px;
+}
+
+.sitescard_wrapper p:last-of-type:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
