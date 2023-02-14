@@ -23,3 +23,45 @@ let facilities = {
         },
     ]
 }
+
+
+let facilitiessSection = document.querySelector(".facilities");
+let facilitiescardWrapper = document.createElement("div")
+facilitiescardWrapper.setAttribute("class", "facilitiescard_wrapper");
+let facilitiesHeadline = document.createElement("h2");
+
+
+
+facilitiesHeadline.textContent = facilities.headline
+
+facilitiessSection.append(facilitiesHeadline)
+facilitiessSection.append(facilitiescardWrapper)
+
+
+facilities.options.forEach((faciliti) => {
+let facilitiescard = document.createElement("section");
+facilitiescard.setAttribute("class", "facilitiescard_style");
+
+facilitiescardWrapper.append(facilitiescard)
+
+let facilitiescardArticle = document.createElement("article")
+
+let showMore = document.createElement("p")
+let facilitiescardImage = document.createElement("img");
+let facilitiescardHeader = document.createElement("h2");
+let facilitiescardText = document.createElement("p");
+
+facilitiescardImage.src = faciliti.icon;
+facilitiescardHeader.textContent = faciliti.headline;
+facilitiescardText.textContent = faciliti.text;
+showMore.textContent += "show me more"
+
+facilitiescardArticle.append(facilitiescardImage);
+facilitiescardArticle.append(facilitiescardHeader);
+facilitiescardArticle.append(facilitiescardText);
+facilitiescardArticle.append(showMore);
+facilitiescard.append(facilitiescardArticle)
+    
+	facilitiessSection.append(facilitiescardWrapper)
+
+});
