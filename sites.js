@@ -27,14 +27,22 @@ let sitessSection = document.querySelector(".sites");
 let sitescardWrapper = document.createElement("div")
 sitescardWrapper.setAttribute("class", "sitescard_wrapper");
 
-
 let sitesHeader = document.createElement("section");
 sitesHeader.setAttribute("class", "sitesHeader")
 
 let sitesHeadline = document.createElement("h2");
 let sitesText = document.createElement("p");
 let sitesIcon = document.createElement("img");
+sitesIcon.setAttribute("class", "sitesIcon")
 
+let sitesIconText = document.createElement("p")
+let sitesIconDiv = document.createElement("div")
+sitesIconDiv.setAttribute("class", "sitesIconDiv")
+
+sitesIconText.textContent = "Start"
+
+sitesIconDiv.append(sitesIcon)
+sitesIconDiv.append(sitesIconText)
 
 sitesHeadline.textContent = sites.headline
 sitesText.textContent = sites.text
@@ -42,7 +50,7 @@ sitesIcon.src = sites.btnicon
 
 sitesHeader.append(sitesHeadline)
 sitesHeader.append(sitesText)
-sitesHeader.append(sitesIcon)
+sitesHeader.append(sitesIconDiv)
 
 sitessSection.append(sitesHeader)
 
@@ -57,10 +65,11 @@ sitescardWrapper.append(sitescard)
 
 let sitescardArticle = document.createElement("article")
 
-let showMore = document.createElement("p")
 let sitescardImage = document.createElement("img");
 let sitescardHeader = document.createElement("h2");
 let sitescardText = document.createElement("p");
+let viewTheSite = document.createElement("p")
+viewTheSite.textContent += "View the Site"
 
 sitescardImage.src = site.img
 sitescardHeader.textContent = site.name;
@@ -70,7 +79,7 @@ sitescardText.textContent = site.city;
 sitescardArticle.append(sitescardImage);
 sitescardArticle.append(sitescardHeader);
 sitescardArticle.append(sitescardText);
-sitescardArticle.append(showMore);
+sitescardArticle.append(viewTheSite);
 sitescard.append(sitescardArticle)
     
 	sitessSection.append(sitescardWrapper)
