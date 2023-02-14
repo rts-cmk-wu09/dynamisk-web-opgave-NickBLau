@@ -18,12 +18,12 @@
 
 .hero h1{
     font-size: xx-large;
-    color: #F78065;
+    color: var(--orange);
 }
 
 
 .hero article div{
-    background-color: #F78065;
+    background-color: var(--orange);
     display: flex;
     justify-content: center;
     align-items: center;
