@@ -23,6 +23,9 @@ services.forEach((service) => {
 let card = document.createElement("section");
 
 card.setAttribute("class", "card_style");
+let cardWrapper = document.createElement("div")
+let cardArticle = document.createElement("article")
+cardWrapper.setAttribute("class", "card_wrapper")
 let cardImage = document.createElement("img");
 let cardHeader = document.createElement("h2");
 let cardText = document.createElement("p");
@@ -33,10 +36,12 @@ cardHeader.textContent = service.headline;
 cardText.textContent = service.text;
 cardLink.textContent = service.linktext;	
 
-	card.append(cardImage);
-	card.append(cardHeader);
-	card.append(cardText);
-	card.append(cardLink);
+cardArticle.append(cardImage);
+cardArticle.append(cardHeader);
+cardArticle.append(cardText);
+cardArticle.append(cardLink);
+card.append(cardArticle)
+    
 
 	servicessSection.append(card)
 

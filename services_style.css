@@ -1,0 +1,31 @@
+.services{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: start;
+    
+}
+
+
+
+.services a{
+    color: var(--orange);
+    text-align: left;
+
+}
+
+.services a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card_style{
+    /* temp v */
+    margin-top: 50px;
+    /* temp ^ */
+    display: flex;
+flex-direction: column;
+outline: 1px red solid;
+}
+
+
