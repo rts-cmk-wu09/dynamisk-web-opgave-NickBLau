@@ -1,12 +1,22 @@
 @import "hero_style.css";
 @import "services_style.css";
-body{
-    background-color: gray;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.orange{
-    color: orange;
+body{
+    background-color: gray;
+    max-width: 1440px;
+    margin: auto;
 }
+
+
+:root {
+    --orange: #F78065;
+  }
 
 img{
     max-width: 100%;}
