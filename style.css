@@ -1,6 +1,7 @@
 @import "hero_style.css";
 @import "services_style.css";
 @import "facilities_style.css";
+@import "sites_style.css";
 
 *{
     margin: 0;
