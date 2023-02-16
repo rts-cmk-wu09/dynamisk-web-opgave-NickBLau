@@ -96,3 +96,33 @@
 // ]
 
 // Opret dit dataobjekt til footerens indhold herunder
+
+// let footer = {
+//         headline: "Making your facility known is our priority",
+//         options : [
+//             {
+//                 headline: "Discover the Network",
+//                 text: "Where to shop",
+//                 secondText: "Tour Guided",
+//                 ThridText: "Our Tours",
+//                 FourthText: "About Us"
+//             },
+//             {
+//                headline: "Become a manager",
+//                 text: "Join your Pairing",
+//                 secondText: "Offer your Service",
+//                 ThridText: "Are you a guide?",
+//             },
+//             {
+//                 headline: "Assistance",
+//                 text: "Support Center",
+//                 secondText: "FAQs",
+//                 ThridText: "Cancallation Options",
+//                 FourthText: "Reliabilty and Sequirty"  
+//             },
+//             {
+//                 headline: "Prices and Availability",
+//                 text: "pitch and configure the availablity calendar."
+//             },
+//         ] 
+// }
