@@ -1,0 +1,18 @@
+.advantages{
+    margin-top: 100px;
+display: flex;
+}
+
+.advantages img{
+    margin-bottom: 50px;
+}
+
+.advantages h3{
+    font-size: 2.0rem;
+
+}
+
+.advantages p{
+    font-size: x-large;
+
+}

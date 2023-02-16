@@ -27,7 +27,7 @@ let advantagescardWrapper = document.createElement("div")
 let advantagescardArticle = document.createElement("article")
 advantagescardWrapper.setAttribute("class", "advantages_card_wrapper")
 let advantagescardImage = document.createElement("img");
-let advantagescardHeader = document.createElement("h2");
+let advantagescardHeader = document.createElement("h3");
 let advantagescardText = document.createElement("p");
 let advantagescardLink = document.createElement("a");
 
