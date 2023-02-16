@@ -3,6 +3,7 @@
 @import "facilities_style.css";
 @import "sites_style.css";
 @import "advantages_style.css";
+@import "footer_style.css";
 
 *{
     margin: 0;
