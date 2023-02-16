@@ -15,6 +15,11 @@ display: flex;
 
 }
 
+.advantages article{
+    max-width: 450px;
+    margin-right: 30px;
+}
+
 .advantages p{
     font-size: x-large;
 
