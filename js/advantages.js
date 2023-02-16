@@ -16,32 +16,41 @@ let advantages = [
     },
 ]
 
-
-
 let advantagessSection = document.querySelector(".advantages");
-advantages.forEach((advantages) => {
-let advantagescard = document.createElement("section");
+let advantagesHeader = document.createElement("h2")
+advantagesHeader.textContent = "Our Advantages"
 
-advantagescard.setAttribute("class", "advantages_card_style");
+
+
+
 let advantagescardWrapper = document.createElement("div")
-let advantagescardArticle = document.createElement("article")
-advantagescardWrapper.setAttribute("class", "advantages_card_wrapper")
-let advantagescardImage = document.createElement("img");
-let advantagescardHeader = document.createElement("h3");
-let advantagescardText = document.createElement("p");
-let advantagescardLink = document.createElement("a");
 
-advantagescardImage.src = advantages.icon;
-advantagescardHeader.textContent = advantages.headline;
-advantagescardText.textContent = advantages.text;
+let advantagescard = document.createElement("section");
+advantagescardWrapper.append(advantagescard)
+advantagessSection.append(advantagesHeader)
+
+
+advantages.forEach((advantage) => {
+
+    advantagescard.setAttribute("class", "advantages_card_style");
+    let advantagescardArticle = document.createElement("article")
+    advantagescardWrapper.setAttribute("class", "advantages_card_wrapper")
+    let advantagescardImage = document.createElement("img");
+    let advantagescardHeader = document.createElement("h3");
+    let advantagescardText = document.createElement("p");
+    
+    
+
+
+advantagescardImage.src = advantage.icon;
+advantagescardHeader.textContent = advantage.headline;
+advantagescardText.textContent = advantage.text;
 
 advantagescardArticle.append(advantagescardImage);
 advantagescardArticle.append(advantagescardHeader);
 advantagescardArticle.append(advantagescardText);
-advantagescardArticle.append(advantagescardLink);
 advantagescard.append(advantagescardArticle)
     
-
-    advantagessSection.append(advantagescard)
+    advantagessSection.append(advantagescardWrapper)
 
 });
