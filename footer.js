@@ -1,5 +1,9 @@
-body = document.createElement("section");
-body.setAttribute("class", ".footer")
+let body = document.querySelector("body")
+
+let myFooter = document.createElement("section")
+myFooter.setAttribute("class", "footer")
+
+body.append(myFooter)
 
 
 
@@ -51,8 +55,11 @@ footerHeader.textContent = footer.headline
 
 
 
-let footercardWrapper = document.createElement("div")
 
+
+let footercardWrapper = document.createElement("div")
+let flexDiv= document.createElement("div")
+flexDiv.setAttribute("class", "flexDiv")
 let footercard = document.createElement("section");
 footercardWrapper.append(footercard)
 
@@ -81,9 +88,33 @@ footer.options.forEach((option) => {
     let footercardFirstText = document.createElement("a");
     let footercardSecondText = document.createElement("a");
     let footercardThirdText = document.createElement("a");
-    let footercardFourthText = document.createElement("a");
-    
+    let footercardFourthText = document.createElement("a"); 
 
+
+    let copyrightSection = document.createElement("section")
+    copyrightSection.setAttribute("class", "copyrightsection")  
+    let copyrightText = document.createElement("p")
+    let copyrightLinksabout = document.createElement("a")
+    let copyrightLinksSitemap = document.createElement("a")
+    let copyrightLinksTerms = document.createElement("a")
+    let copyrightLinksPrivacy = document.createElement("a")
+    let copyrightLinksTeams = document.createElement("a")
+    let copyrightDiv = document.createElement("div")
+
+    copyrightText.textContent = option.copyright;
+    copyrightLinksabout.textContent = option.about
+    copyrightLinksSitemap.textContent = option.SiteMap
+    copyrightLinksTerms.textContent = option.Terms
+    copyrightLinksPrivacy.textContent = option.Privacy
+    copyrightLinksTeams.textContent = option.Teams
+
+    copyrightSection.append(copyrightText)
+    copyrightDiv.append(copyrightLinksabout)
+    copyrightDiv.append(copyrightLinksSitemap)
+    copyrightDiv.append(copyrightLinksTerms)
+    copyrightDiv.append(copyrightLinksPrivacy)
+    copyrightDiv.append(copyrightLinksTeams)
+    copyrightSection.append(copyrightDiv)
 
 footercardHeader.textContent = option.headline;
 footercardFirstText.textContent = option.text;
@@ -98,12 +129,13 @@ footercardArticle.append(footercardFirstText);
 footercardArticle.append(footercardSecondText);
 footercardArticle.append(footercardThirdText);
 footercardArticle.append(footercardFourthText);
-footercard.append(footercardArticle)
+flexDiv.append(footercardArticle)
+footercard.append(flexDiv)
     
-footersSection.append(copyrightSection)
 
 footersSection.append(footercardWrapper)
 
+footercardWrapper.append(copyrightSection)
     
 
 });
