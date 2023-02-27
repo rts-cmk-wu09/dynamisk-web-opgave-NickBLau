@@ -1,0 +1,25 @@
+@import "hero_style.css";
+@import "services_style.css";
+@import "facilities_style.css";
+@import "sites_style.css";
+@import "advantages_style.css";
+@import "footer_style.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1240px;
+    margin: auto;
+}
+
+
+:root {
+    --orange: #F78065;
+  }
+
+img{
+    max-width: 100%;}

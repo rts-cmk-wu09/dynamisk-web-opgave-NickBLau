@@ -1,0 +1,45 @@
+.services{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: start;
+    
+}
+
+.services article{
+    width: 450px;
+}
+
+
+
+.services a{
+    color: var(--orange);
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.services p{
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+
+.services h2{
+    font-size: xx-large;
+}
+
+.services a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card_style{
+    /* temp v */
+    margin-top: 50px;
+    /* temp ^ */
+    display: flex;
+flex-direction: column;
+}
+
+

@@ -1,0 +1,63 @@
+.footer_card_wrapper{
+    height: 700px;
+    background-color: rgba(211, 211, 211, 0.3);
+    padding: 50px;
+    
+}
+
+.footer_card_style{
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: center;
+}
+
+.footer article a{
+display: flex;
+flex-direction: column;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.Easy_camper_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-direction: column;
+    
+}
+
+.flexDiv{
+    display: flex;
+    gap: 25px;
+}
+
+.Easy_camper_section p{
+    font-size: 2rem;
+}
+
+.Easy_camper_section h2{
+    width: 100px;
+    font-size: 3rem;
+}
+
+.copyrightsection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyrightsection:nth-child(2){
+    border-top: 1px solid gray;
+}
+
+.copyrightsection div {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
