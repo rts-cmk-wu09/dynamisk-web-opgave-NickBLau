@@ -13,8 +13,9 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
     align-self: center;
     align-items: flex-start;
     justify-content: space-between;
-    width: 350px;
+    width: 344px;
     height: 250px;
+    gap: 10px;
 }
 
 .facilities img{
