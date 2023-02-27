@@ -71,6 +71,11 @@
     /* fix later ^ */
 }
 
+.navdiv img:hover{
+    cursor: pointer;
+    
+} 
+
 .keyarrow{
     display: flex;
     justify-content: space-around;
